@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+.page {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/decor.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.page__cover {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

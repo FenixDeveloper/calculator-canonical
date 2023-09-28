@@ -1,0 +1,35 @@
+.display {
+    background-color: #1B1F2E;
+    color: white;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.display__error {
+    color: #D35C5C;
+
+}
+
+.display__equation.display_calculated::after {
+    content: " =";
+    color: #8B93AD;
+}
+
+.display__result {
+    font-size: 80px;
+    min-height: 95px;
+    line-height: 95px;
+}
+
+.display__error, .display__equation, .display__result {
+    display: block;
+    box-sizing: border-box;
+}
+
+.display__error, .display__equation {
+    font-size: 20px;
+    min-height: 25px;
+    line-height: 25px;
+}

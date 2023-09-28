@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="bundles/index.css">
+</head>
+<body class="page">
+
+    <div class="page__cover">
+        <div class="calculator" id="calculator-example">
+            <div class="calculator__display calculator__item display">
+                <div class="display__error"></div>
+                <div class="display__equation"></div>
+                <div class="display__result"></div>
+            </div>
+            <div class="calculator__numbers">
+                <button type="button" class="calculator__item button button_num" data-type="num">1</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">2</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">3</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">4</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">5</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">6</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">7</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">8</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">9</button>
+                <button type="button" class="calculator__item button button_num" data-type="num">0</button>
+                <button type="button" class="calculator__item button button_num" data-type="mod">±</button>
+                <button type="button" class="calculator__item button button_num" data-type="mod">,</button>
+            </div>
+            <div class="calculator__operations">
+                <button type="button" class="calculator__item button button_op" data-type="op">+</button>
+                <button type="button" class="calculator__item button button_op" data-type="op">-</button>
+                <button type="button" class="calculator__item button button_op" data-type="op">÷</button>
+                <button type="button" class="calculator__item button button_op" data-type="op">×</button>
+                <button type="button" class="calculator__item button button_op" data-type="op">(</button>
+                <button type="button" class="calculator__item button button_op" data-type="op">)</button>
+                <button type="button" class="calculator__item button button_op" data-type="act">=</button>
+            </div>
+            <div class="calculator__label calculator__item">calculator m-213</div>
+            <button type="button" class="calculator__reset calculator__item button button_act" data-type="act">C</button>
+        </div>
+    </div>
+
+    <script src="components/rpn.js"></script>
+    <script src="components/calculator.js"></script>
+    <script src="bundles/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/ys-text/fonts.css');
+
+@import url('../blocks/page.css');
+@import url('../blocks/calculator.css');
+@import url('../blocks/display.css');
+@import url('../blocks/button.css');
