@@ -70,7 +70,7 @@ function initDisplay(rootEl, { display }) {
  * @param {function} onClick
  */
 function initButton(buttonEl, onClick) {
-    const value = buttonEl.textContent;
+    const value = buttonEl.textContent.trim();
     const type = buttonEl.dataset.type;
 
     buttonEl.addEventListener('click', (event) => {
