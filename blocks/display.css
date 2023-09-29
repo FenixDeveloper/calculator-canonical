@@ -18,9 +18,9 @@
 }
 
 .display__result {
-    font-size: 80px;
-    min-height: 95px;
-    line-height: 95px;
+    font-size: 8vmin;
+    min-height: 9vmin;
+    line-height: 9vmin;
 }
 
 .display__error, .display__equation, .display__result {
@@ -29,7 +29,7 @@
 }
 
 .display__error, .display__equation {
-    font-size: 20px;
-    min-height: 25px;
-    line-height: 25px;
+    font-size: 2.5vmin;
+    min-height: 2.5vmin;
+    line-height: 2.5vmin;
 }
