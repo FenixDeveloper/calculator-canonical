@@ -118,7 +118,7 @@ function initState({ errors }) {
             }
         }
         const checkBrackets = (canOpen = true) => {
-            if (state.bracketCount === 0) {
+            if ((state.bracketCount === 0) || (state.bracketCount > 0 && state.currentNum.length === 0)) {
                 state.waitFor = state.waitFor.filter(v => v !== 'close-bracket');
             } else {
                 state.waitFor = [...state.waitFor, "close-bracket"];
@@ -286,7 +286,7 @@ function initCalculator(rootEl, settings) {
                 if (current.stack.length === 0) return;
 
                 if (current.bracketCount !== 0) {
-                    display.setError('незакрыта скобка');
+                    display.setError(settings.errors.bracketStillOpen);
                     return;
                 }
                 const postfix = state.getPostfixEquation(current);
@@ -300,7 +300,7 @@ function initCalculator(rootEl, settings) {
                     }
                     current = state.reset();
                 } catch (err) {
-                    display.setError('некорректное выражение');
+                    display.setError(settings.errors.incorrectEquation);
                 }
                 return;
             }

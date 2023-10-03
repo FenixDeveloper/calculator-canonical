@@ -13,7 +13,9 @@ const settings = {
         delimiterAlreadySet: 'разделитель уже установлен',
         canNotOpenBracket: 'сейчас нельзя открыть скобку',
         canNotCloseBracket: 'сейчас нельзя закрыть скобку',
-        canNotSelectOperator: 'сейчас нельзя ввести оператор'
+        canNotSelectOperator: 'сейчас нельзя ввести оператор',
+        bracketStillOpen: "не закрыта скобка",
+        incorrectEquation: "некорректное выражение"
     }
 };
 
