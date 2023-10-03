@@ -238,7 +238,7 @@ function initState({ errors }) {
             items.push(formatNum(state));
         }
         const infix = items
-            .map(v => v.replace(/[\(\)]/g, ""))
+            .map(v => v.replace(/([()])/g, " $1 "))
             .join(" ");
         console.debug(`[calc] convert to infix: ${infix}`);
         return infixToPostfix(infix);
